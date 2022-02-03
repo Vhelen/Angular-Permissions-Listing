@@ -16,7 +16,7 @@ def add_perm(perms_dict, perm_to_add, file_perm, line_perm):
 
 
 html_files = []
-for path, sub_dirs, files in os.walk('to_analyse'):
+for path, sub_dirs, files in os.walk('to_analyze'):
     for filename in files:
         file = os.path.join(path, filename)
         file_extension = pathlib.Path(file).suffix
